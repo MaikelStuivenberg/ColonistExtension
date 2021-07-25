@@ -1,0 +1,35 @@
+{
+    "name": "Colonist.io",
+    "description": "Colonist.io helper",
+    "version": "0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.colonist.io/*",
+                "*://colonist.io/*"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "jquery.min.js",
+                "msgpack.min.js",
+                "worker.js"
+            ],
+            "matches": [
+                "*://*.colonist.io/*",
+                "*://colonist.io/*"
+            ]
+        }
+    ]
+}

@@ -11,7 +11,7 @@ window.WebSocket = function (a, b) {
     var data = msgpack.deserialize(event.data);
     if (data.id == "60") {
       // Endgame data
-      $.ajax('https://colonist.maikelstuivenberg.nl/post/endgame', {
+      $.ajax('https://colonist.maikelstuivenberg.nl/events', {
         type: 'POST', data: JSON.stringify(data), dataType: 'json', contentType: 'application/json',
       });
     }

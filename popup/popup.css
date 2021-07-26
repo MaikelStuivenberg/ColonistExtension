@@ -1,0 +1,100 @@
+body {
+    width: 400px;
+    height: 500px;
+    background: url(https://colonist.io/dist/images/page_bg.png),radial-gradient(circle,#56ccf2 0%,#2f80ed 100%);
+    border: 5px solid #ffc780;
+    margin: 0;
+    padding: 10px;
+}
+
+.logo {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    height: 75px;
+    margin: 0 auto;
+    display: block;
+}
+
+.header { 
+    width: 100%;
+    padding-bottom: 20px;
+}
+.header span {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 18pt;
+    font-weight: 600;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.user-search {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+/* 
+.user-search span {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 5px;
+} */
+
+input.usr_input {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 12pt;
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input.search_btn, input.reset_btn {
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 12pt;
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+input.search_btn:active, input.reset_btn:active {
+    border: 1px solid #999;
+}
+
+#search_results, #gametable {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    color: white;
+
+    border: 0;
+    border-collapse: collapse;
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+#search_results th, #gametable th {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#search_results tbody tr:hover {
+    background-color: rgba(100,100,100,0.3);
+    cursor: pointer;
+}

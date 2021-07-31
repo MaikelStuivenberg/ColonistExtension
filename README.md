@@ -3,6 +3,10 @@
 A chrome extension that (currently) reads the end game data and sends this to a server.
 
 ## How to use
+Install latest version from the Chrome Web store
+https://chrome.google.com/webstore/detail/colonistio/habimnjcfhbohmkecmfgegndmgllhkji?hl=en
+
+or use the source
 1. Download the source
 2. Go to you Chrome extensions
 3. Click on: 'Load unpacked'

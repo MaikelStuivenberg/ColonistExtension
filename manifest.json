@@ -1,7 +1,7 @@
 {
     "name": "Colonist.io",
     "description": "Colonist.io Helper",
-    "version": "0.2",
+    "version": "0.3",
     "manifest_version": 3,
     "icons": {
         "64": "assets/icon64.png",
@@ -10,29 +10,25 @@
     "action": {
         "default_popup": "popup/popup.html"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*.colonist.io/*",
-                "*://colonist.io/*"
-            ],
-            "js": [
-                "script.js"
-            ],
-            "run_at": "document_start"
-        }
-    ],
-    "web_accessible_resources": [
-        {
-            "resources": [
-                "jquery.min.js",
-                "msgpack.min.js",
-                "worker.js"
-            ],
-            "matches": [
-                "*://*.colonist.io/*",
-                "*://colonist.io/*"
-            ]
-        }
-    ]
+    "content_scripts": [{
+        "matches": [
+            "*://*.colonist.io/*",
+            "*://colonist.io/*"
+        ],
+        "js": [
+            "script.js"
+        ],
+        "run_at": "document_start"
+    }],
+    "web_accessible_resources": [{
+        "resources": [
+            "jquery.min.js",
+            "msgpack.min.js",
+            "worker.js"
+        ],
+        "matches": [
+            "*://*.colonist.io/*",
+            "*://colonist.io/*"
+        ]
+    }]
 }

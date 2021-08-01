@@ -11,38 +11,60 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="https://colonist.io/dist/images/logo.png">
-    </div>
-
-    <div id="search">
-        <div class="header">
-            <span>Search end game stats</span>
+    <div class="scroll">
+        <div class="logo">
+            <img src="https://colonist.io/dist/images/logo.png">
         </div>
 
-        <div class="user-search">
-            <input class="usr_input" type="text" placeholder="Username">
-            <input class="search_btn" type="button" value="Search">
+        <div id="search">
+            <h1>Search Games</h1>
+
+            <div class="user-search">
+                <input class="usr_input" type="text" placeholder="Username">
+                <input class="search_btn" type="button" value="Search" disabled>
+            </div>
+
+
+            <div id="lastgames">
+                <h1>Last 5 Games</h1>
+
+                <table id="resulttable_last">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th></th>
+                            <th>Players</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
         </div>
-    </div>
 
-    <div id="search_results" style="display: none;">
-        <table id="resulttable">
-            <thead>
-                <tr>
-                    <th width="50">Id</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-        </table>
-        <input class="reset_btn" type="button" value="Reset">
-    </div>
+        <div id="search_results" style="display: none;">
+            <div class="header"><span id="search_results_header"></span></div>
+            <table id="resulttable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th></th>
+                        <th>Players</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+            <input class="reset_btn" type="button" value="Reset">
+        </div>
 
 
-    <div id="game_data" style="display: none;">
-        <table id="gametable">
-        </table>
-        <input class="reset_btn" type="button" value="Reset">
+        <div id="game_data" style="display: none;">
+            <table id="gamedetailstable">
+            </table>
+            <h1>Dice stats</h1>
+            <table id="dicestatstable">
+            </table>
+            <input class="reset_btn" type="button" value="Reset">
+        </div>
     </div>
 
     <script src="popup.js" type="text/javascript"></script>

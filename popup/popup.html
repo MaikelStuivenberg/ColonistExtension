@@ -60,9 +60,20 @@
         <div id="game_data" style="display: none;">
             <table id="gamedetailstable">
             </table>
-            <h1>Dice stats</h1>
-            <table id="dicestatstable">
-            </table>
+            <div id="gamedetails_tabs">
+                <ul class="menu">
+                    <li id="mtab1" class="active">Dice<br>stats</li>
+                    <li id="mtab2">Resource cards</li>
+                </ul>
+                <div id="tab1" class="tab">
+                    <table id="dicestatstable">
+                    </table>
+                </div>
+                <div id="tab2" style="display: none;">
+                    <table id="resourcecards">
+                    </table>
+                </div>
+            </div>
             <input class="reset_btn" type="button" value="Reset">
         </div>
     </div>

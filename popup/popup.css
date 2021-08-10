@@ -95,6 +95,7 @@ input.reset_btn:active {
 #search_results,
 #gamedetailstable,
 #dicestatstable,
+#resourcecards,
 #resulttable_last {
     font-family: 'Open Sans', sans-serif;
     font-size: 10pt;
@@ -113,6 +114,7 @@ tbody {
 #search_results th,
 #gamedetailstable th,
 #dicestatstable th,
+#resourcecards th,
 #resulttable_last th {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
@@ -123,12 +125,17 @@ tbody {
     border-bottom: 1px solid rgba(45, 74, 122, 0.3);
 }
 
-#search_results td,
-#gamedetailstable td,
 #dicestatstable td,
-#resulttable_last td {
+#resourcecards td,
+#resulttable_last td,
+#search_results td,
+#gamedetailstable td {
     padding: 4px 10px;
     border-bottom: 1px solid rgba(45, 74, 122, 0.3);
+}
+
+#search_results td,
+#gamedetailstable td {
     cursor: pointer !important;
 }
 
@@ -170,4 +177,43 @@ a.details:hover {
 
 #gamedetailstable .players a {
     display: block;
+}
+
+
+/* Styling stats menu */
+
+#gamedetails_tabs {
+    margin: 25px 0 0 0;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0px;
+    display: block;
+    text-align: center;
+    width: 125px;
+    font-weight: bold;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+
+li:hover {
+    background-color: #62c3256c;
+    cursor: pointer;
+}
+
+li.active {
+    border-bottom: 4px solid #61c325;
 }

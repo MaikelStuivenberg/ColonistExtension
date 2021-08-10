@@ -73,6 +73,19 @@ $(".search_btn").click(function() {
 
 $(".reset_btn").click(reset);
 
+$("#gamedetails_tabs > .menu li").click(function() {
+    // Hide all tabs and (re)open the correct one
+    $("#tab1").hide();
+    $("#tab2").hide();
+
+    var tab = $("#" + $(this).attr('id').substring(1));
+    tab.show();
+
+    // Change active menu item
+    $(this).parent().find('li.active').removeClass('active');
+    $(this).addClass('active');
+});
+
 function reset() {
     $(".usr_input").val("");
     $("#search").show();
@@ -110,11 +123,12 @@ function getPlayers(row, useDiv = false) {
 function showDetailsPart(row) {
 
     showGameDetails(row);
-    showDiceStats(row);
+    generateDiceStats(row);
+    generateResourceStats(row);
 
     // Show details & hide search results
     $("#search").hide();
-    $("#resulttable").hide();
+    $("#search_results").hide();
     $("#game_data").show();
 }
 
@@ -149,7 +163,7 @@ function showGameDetails(row) {
     dataTbody.appendTo("#gamedetailstable");
 }
 
-function showDiceStats(row) {
+function generateDiceStats(row) {
 
     // Reset table
     $("#dicestatstable > tbody").empty();
@@ -165,4 +179,31 @@ function showDiceStats(row) {
 
     // Add to table
     dataTbody.appendTo("#dicestatstable");
+}
+
+function generateResourceStats(row) {
+
+    var resources = {
+        1: "Lumber",
+        2: "Brick",
+        3: "Wool",
+        4: "Grain",
+        5: "Ore"
+    };
+
+    // Reset table
+    $("#resourcecards > tbody").empty();
+
+    // Create new tbody
+    var dataTbody = $("<tbody />");
+
+    var parsedJson = JSON.parse(row.json);
+
+    console.log(parsedJson.Data.ResourceCardStats);
+    for (var i = 1; i <= 5; i++) {
+        dataTbody.append("<tr><th width=\"75\">" + resources[i] + "</th><td width=\"325\">" + parsedJson.Data.ResourceCardStats.filter(el => el == i).length + "</td></tr>");
+    }
+
+    // Add to table
+    dataTbody.appendTo("#resourcecards");
 }

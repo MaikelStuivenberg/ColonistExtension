@@ -1,7 +1,7 @@
 {
     "name": "Colonist.io",
     "description": "Colonist.io Helper",
-    "version": "0.4",
+    "version": "0.4.1",
     "manifest_version": 3,
     "icons": {
         "64": "assets/icon64.png",

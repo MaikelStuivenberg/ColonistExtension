@@ -3,7 +3,7 @@ body {
     background: url(https://colonist.io/dist/images/page_bg.png), radial-gradient(circle, #56ccf2 0%, #2f80ed 100%);
     border: 5px solid #ffc780;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
 h1,
@@ -21,7 +21,7 @@ h3 {
     width: 100%;
     height: 500px;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     overflow: scroll;
 }
 
@@ -125,6 +125,18 @@ tbody {
     border-bottom: 1px solid rgba(45, 74, 122, 0.3);
 }
 
+#resourcecards th {
+    display: flex;
+    align-items: center;
+    font-size: 10pt;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#resourcecards th img {
+    margin-right: 5px;
+}
+
 #dicestatstable td,
 #resourcecards td,
 #resulttable_last td,
@@ -183,7 +195,7 @@ a.details:hover {
 /* Styling stats menu */
 
 #gamedetails_tabs {
-    margin: 25px 0 0 0;
+    margin: 25px 15px 0 15px;
     border: 2px solid rgba(0, 0, 0, 0.25);
     background-color: rgba(0, 0, 0, 0.25);
 }

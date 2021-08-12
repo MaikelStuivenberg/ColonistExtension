@@ -201,7 +201,7 @@ function generateResourceStats(row) {
 
     console.log(parsedJson.Data.ResourceCardStats);
     for (var i = 1; i <= 5; i++) {
-        dataTbody.append("<tr><th width=\"75\">" + resources[i] + "</th><td width=\"325\">" + parsedJson.Data.ResourceCardStats.filter(el => el == i).length + "</td></tr>");
+        dataTbody.append("<tr><<th width=\"75\"><img height=\"25\" src=\"../assets/cards/card_" + resources[i].toLowerCase() + ".svg\">" + resources[i] + "</th><td width=\"325\">" + parsedJson.Data.ResourceCardStats.filter(el => el == i).length + "</td></tr>");
     }
 
     // Add to table

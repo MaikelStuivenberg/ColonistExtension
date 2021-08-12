@@ -14,6 +14,6 @@ or use the source
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/13018117/127061147-e7b1debe-4582-4c3c-a2c0-4013a8091233.png" width="250">
-<img src="https://user-images.githubusercontent.com/13018117/127061156-5ba24277-1df8-447c-bfa4-59de4dfc9dcd.png" width="250">
-<img src="https://user-images.githubusercontent.com/13018117/127061166-aa016242-ee3e-455d-94e4-65010d333748.png" width="250">
+<img src="https://user-images.githubusercontent.com/13018117/128939857-2da917b2-0d8d-438d-bc62-9f3f37869275.png" width="300">
+<img src="https://user-images.githubusercontent.com/13018117/128939913-74c44b51-ea16-4242-95b6-c8c3958acf3e.png" width="300">
+<img src="https://user-images.githubusercontent.com/13018117/129202633-5e9613d3-8d6d-418c-8082-ef546850f667.png" width="300">
